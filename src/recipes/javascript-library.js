@@ -10,7 +10,7 @@ void function() {
     window.CSSUsage.StyleWalker.recipesToRun.push( function JSLibrary( element, results) {
         if(element.nodeName == 'SCRIPT') {
             var srcValue = element.getAttribute('src');
-            if (srcValue != null && srcValue !== undefined && srcValue != "")
+            if (srcValue !== null && srcValue !== undefined && srcValue !== "")
             {
                 results[srcValue] = results[srcValue] || { count: 0 };
                 results[srcValue].count++;
